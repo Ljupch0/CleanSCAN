@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                             pdfWriter.addBitmap(bitmap);
 
                             String itemName = textValue.replaceAll("[^a-zA-Z0-9\\s]", "");
-                            String filename = timestamp + "-" +  itemName + ".pdf";
+                            String filename = itemName + ".pdf";
 
                             FileIOUtils.mkdir(baseDirectory + "/" + category);
                             FileIOUtils.writeFile( baseDirectory + "/" + category + "/", filename, new FileWritingCallback() {
